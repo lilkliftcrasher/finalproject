@@ -1,0 +1,120 @@
+body{
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC, rgb(204, 204, 255));
+    color: black;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    box-shadow: 25px 50px 25px 10px linear-gradient(35deg, #CCFFFF, #FFCCCC, rgb(204, 204, 255));;
+}
+*{
+    box-sizing: border-box;
+}
+
+.page{
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: white;
+}
+.head{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    padding: 1.5rem;
+  
+
+
+
+}
+.head .logo{
+    text-decoration: none;
+    margin: 0;
+    color: orange;
+    animation-name: colorful;
+    animation-duration: 25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes colorful{
+    0%{
+      
+        color : orange;
+       
+    }
+    25%{
+       
+        color : rgb(160, 253, 255);
+        top: 10px
+    }
+    50%{
+  
+        color : #CCFFFF;
+        left: 10px
+       
+    }
+    75%{
+       
+        color : #FFCCCC;
+        bottom: 10px;
+       
+    }
+    100%{
+        color :  rgb(204, 204, 255);
+        right: 10px;
+    }
+}
+.navi a{
+    text-decoration: none;
+    color: black;
+    padding: 0rem 1rem;
+}
+
+.navi .active{
+    color: orange;
+    animation-name: active;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes active {
+    0%{
+        background-color: #CCFFFF;
+    }
+    50%{
+        background-color: #FFCCCC;
+    }
+    100%{
+        background-color:  rgb(204, 204, 255);
+    }
+}
+
+.sub-main{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC, rgb(204, 204, 255));;
+    margin: 0rem 1rem;
+}
+.sub-main .text{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0rem 2rem;
+}
+.frame{
+    margin: 0.5rem 0rem;
+}
+.main-image{
+    width: 350px;
+    height: 350px;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+.foot-social a{
+    padding: 0rem 1rem;
+}
+.title{
+    text-align: center;
+}
